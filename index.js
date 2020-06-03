@@ -27,10 +27,17 @@ function processFirstItem(stringList, callback) {
  * Study the code for counter1 and counter2. Answer the questions below.
  * 
  * 1. What is the difference between counter1 and counter2?
+ * counter1 has the count variable inside the scope of the function and it has another function inside named counter. 
+ * counter 2 has the count variable on the outside of the scope. 
  * 
  * 2. Which of the two uses a closure? How can you tell?
+ * counter1 uses a closure. This can be seen where the variable declaration lives inside the scope of the function 
+ * and the return statement has another fuction with the counter variable deeper inside the scope. 
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
+ * If you needed to pass in a function as an argument to another function, you can do that with counter1. 
+ * counter2 would be preferable in cases where you need a function to start executing from. You can pass counter1 into counter2 
+ * but not the other way around. 
  *
 */
 
